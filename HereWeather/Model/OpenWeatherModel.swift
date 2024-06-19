@@ -14,48 +14,40 @@ class OpenWeatherModel {
     
     static let model = OpenWeatherModel()
     
-    private var response = ""
+    private var weatherResponse: OpenWeatherResponse?
     
-    func requestAPI(lat: Double, lon: Double) {
+    func requestThreeHourAPI(lat: Double, lon: Double, 
+                             callBack: @escaping (_ response: OpenWeatherResponse) -> (), errorCallBack: @escaping () -> ()) {
         APIClient.request(OpenWeatherResponse.self,
-                          router: OpenWeatherRouter.call3HourForecast(lat: lat, lon: lon),
+                          router: APIRouter.call3HourForecast(lat: lat, lon: lon),
                           success: {(response: OpenWeatherResponse) -> () in
                               print(#function, response)
+                              callBack(response)
+            
                           },
                           failure: {(error: AFError) -> () in
                               print(#function, error)
+                              errorCallBack()
                           }
         )
     }
-}
-
-
-struct OpenWeatherResponse: Decodable {
-    let cod: String
-    let message: Int
-    let cnt: Int
-    let list: [ForeCast]
-}
-
-struct ForeCast: Decodable {
-    let dt: Int
-    let date: String
-    let main: Main
-    let wind: Wind
     
-    enum CodingKeys: String, CodingKey {
-        case dt
-        case date = "dt_txt"
-        case main
-        case wind
+    func setResponse(response: OpenWeatherResponse) {
+        if let weatherResponse {
+            weatherResponse.cod = response.cod
+            weatherResponse.message = response.message
+            weatherResponse.cnt = response.cnt
+            weatherResponse.list = response.list
+            weatherResponse.city = response.city
+        } else {
+            weatherResponse = response
+        }
     }
+    
+    func clearResponse() {
+        
+    }
+    
 }
 
-struct Main: Decodable {
-    let temp: Double
-    let humidity: Int
-}
 
-struct Wind: Decodable {
-    let speed: Double
-}
