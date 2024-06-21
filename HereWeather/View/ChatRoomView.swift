@@ -131,6 +131,7 @@ class ChatRoomView: UIView {
     }
     
     @objc func updateResponse() {
+        print(#function)
         delegate?.checkDeviceLocationAuthorization()
     }
     

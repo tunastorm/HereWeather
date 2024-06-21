@@ -14,7 +14,6 @@ enum APIRouter: URLRequestConvertible {
     case call3HourForecast(lat: Double, lon: Double)
     case geocoding(city: String, contry: String)
     
-
     func asURLRequest() throws -> URLRequest {
         let url = OpenWeatherAPI.baseURL
         var urlRequest = URLRequest(url: url)

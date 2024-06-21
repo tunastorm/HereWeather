@@ -51,6 +51,7 @@ class OpenWeatherModel {
     
     func pickNowWeather(responseList: [ForeCast]) -> [ForeCast]{
         let date = Date()
+        print(#function, date)
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: Locale.current.identifier)
@@ -65,7 +66,7 @@ class OpenWeatherModel {
                 if nowDate <= date && date < nextDate {
                     result = [foreCast]
                     dateFormatter.dateFormat = "MM월 dd일 HH시 MM분"
-                    result[0].date = dateFormatter.string(from: nowDate)
+                    result[0].date = dateFormatter.string(from: date)
                     break
                 }
             } else if nowDate == date {

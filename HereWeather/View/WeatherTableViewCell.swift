@@ -49,7 +49,6 @@ class WeatherTableViewCell: UITableViewCell {
             $0.height.equalTo(26)
             $0.edges.equalToSuperview().inset(4)
         }
-        
     }
     
     func configUI() {

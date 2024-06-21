@@ -24,6 +24,8 @@
 		BC9F6D6C2C230CA800D11B98 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D6B2C230CA800D11B98 /* ReusableIdentifier.swift */; };
 		BC9F6D6E2C23101900D11B98 /* OpenWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D6D2C23101900D11B98 /* OpenWeatherResponse.swift */; };
 		BC9F6D702C23347F00D11B98 /* ViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D6F2C23347F00D11B98 /* ViewTransition.swift */; };
+		BC9F6DA02C256F0B00D11B98 /* NowWeatherCLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D9F2C256F0B00D11B98 /* NowWeatherCLLocation.swift */; };
+		BC9F6DA22C256F7F00D11B98 /* NowWeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6DA12C256F7F00D11B98 /* NowWeatherTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		BC9F6D6B2C230CA800D11B98 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 		BC9F6D6D2C23101900D11B98 /* OpenWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherResponse.swift; sourceTree = "<group>"; };
 		BC9F6D6F2C23347F00D11B98 /* ViewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransition.swift; sourceTree = "<group>"; };
+		BC9F6D9F2C256F0B00D11B98 /* NowWeatherCLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowWeatherCLLocation.swift; sourceTree = "<group>"; };
+		BC9F6DA12C256F7F00D11B98 /* NowWeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowWeatherTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				BC6110472C22D428009EA24F /* NowWeatherViewController.swift */,
+				BC9F6D9F2C256F0B00D11B98 /* NowWeatherCLLocation.swift */,
+				BC9F6DA12C256F7F00D11B98 /* NowWeatherTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9F6D672C2306FE00D11B98 /* ChatRoomView.swift in Sources */,
+				BC9F6DA22C256F7F00D11B98 /* NowWeatherTableViewController.swift in Sources */,
 				BC9F6D652C22FCA200D11B98 /* APIRouter.swift in Sources */,
 				BC6110212C22CB23009EA24F /* AppDelegate.swift in Sources */,
 				BC61104A2C22D452009EA24F /* OpenWeatherModel.swift in Sources */,
@@ -226,6 +233,7 @@
 				BC9F6D692C23077400D11B98 /* WeatherTableViewCell.swift in Sources */,
 				BC9F6D642C22FCA200D11B98 /* APIKey.swift in Sources */,
 				BC6110232C22CB23009EA24F /* SceneDelegate.swift in Sources */,
+				BC9F6DA02C256F0B00D11B98 /* NowWeatherCLLocation.swift in Sources */,
 				BC9F6D702C23347F00D11B98 /* ViewTransition.swift in Sources */,
 				BC9F6D6E2C23101900D11B98 /* OpenWeatherResponse.swift in Sources */,
 				BC9F6D6C2C230CA800D11B98 /* ReusableIdentifier.swift in Sources */,
