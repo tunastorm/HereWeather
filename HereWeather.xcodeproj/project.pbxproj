@@ -19,10 +19,11 @@
 		BC9F6D632C22FCA200D11B98 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D602C22FCA200D11B98 /* APIClient.swift */; };
 		BC9F6D642C22FCA200D11B98 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D612C22FCA200D11B98 /* APIKey.swift */; };
 		BC9F6D652C22FCA200D11B98 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D622C22FCA200D11B98 /* APIRouter.swift */; };
-		BC9F6D672C2306FE00D11B98 /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D662C2306FE00D11B98 /* ChatRoomTableViewController.swift */; };
+		BC9F6D672C2306FE00D11B98 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D662C2306FE00D11B98 /* ChatRoomView.swift */; };
 		BC9F6D692C23077400D11B98 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D682C23077400D11B98 /* WeatherTableViewCell.swift */; };
 		BC9F6D6C2C230CA800D11B98 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D6B2C230CA800D11B98 /* ReusableIdentifier.swift */; };
 		BC9F6D6E2C23101900D11B98 /* OpenWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D6D2C23101900D11B98 /* OpenWeatherResponse.swift */; };
+		BC9F6D702C23347F00D11B98 /* ViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F6D6F2C23347F00D11B98 /* ViewTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +38,11 @@
 		BC9F6D602C22FCA200D11B98 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		BC9F6D612C22FCA200D11B98 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		BC9F6D622C22FCA200D11B98 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
-		BC9F6D662C2306FE00D11B98 /* ChatRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewController.swift; sourceTree = "<group>"; };
+		BC9F6D662C2306FE00D11B98 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 		BC9F6D682C23077400D11B98 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		BC9F6D6B2C230CA800D11B98 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 		BC9F6D6D2C23101900D11B98 /* OpenWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherResponse.swift; sourceTree = "<group>"; };
+		BC9F6D6F2C23347F00D11B98 /* ViewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 		BC61103E2C22D03B009EA24F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BC9F6D662C2306FE00D11B98 /* ChatRoomTableViewController.swift */,
+				BC9F6D662C2306FE00D11B98 /* ChatRoomView.swift */,
 				BC9F6D682C23077400D11B98 /* WeatherTableViewCell.swift */,
 			);
 			path = View;
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				BC9F6D6B2C230CA800D11B98 /* ReusableIdentifier.swift */,
+				BC9F6D6F2C23347F00D11B98 /* ViewTransition.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -214,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9F6D672C2306FE00D11B98 /* ChatRoomTableViewController.swift in Sources */,
+				BC9F6D672C2306FE00D11B98 /* ChatRoomView.swift in Sources */,
 				BC9F6D652C22FCA200D11B98 /* APIRouter.swift in Sources */,
 				BC6110212C22CB23009EA24F /* AppDelegate.swift in Sources */,
 				BC61104A2C22D452009EA24F /* OpenWeatherModel.swift in Sources */,
@@ -223,6 +226,7 @@
 				BC9F6D692C23077400D11B98 /* WeatherTableViewCell.swift in Sources */,
 				BC9F6D642C22FCA200D11B98 /* APIKey.swift in Sources */,
 				BC6110232C22CB23009EA24F /* SceneDelegate.swift in Sources */,
+				BC9F6D702C23347F00D11B98 /* ViewTransition.swift in Sources */,
 				BC9F6D6E2C23101900D11B98 /* OpenWeatherResponse.swift in Sources */,
 				BC9F6D6C2C230CA800D11B98 /* ReusableIdentifier.swift in Sources */,
 			);
@@ -366,9 +370,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F8FT97JYZT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HereWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -400,9 +405,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F8FT97JYZT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HereWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
