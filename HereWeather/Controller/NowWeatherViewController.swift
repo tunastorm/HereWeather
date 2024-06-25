@@ -30,7 +30,6 @@ class NowWeatherViewController: UIViewController, chatRoomDelegate {
     
    
     override func loadView() {
-        super.loadView()
         self.view = chatRoomView
     }
     
